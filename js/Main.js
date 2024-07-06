@@ -58,8 +58,16 @@ let onClickCount = 0;
 let storedUserEQ = JSON.parse(localStorage.getItem("storedUserEQ")) || { equations: [] };
 let property = storedUserEQ.equations;
 
-alert("The project is still in progress, and the calculator functionality has not been implemented yet.");
-alert("Inspired by Mathway Calculator")
+let history = JSON.parse(localStorage.getItem('changeHistory')) || { isVisit: false },
+    isVisit = history.isVisit;
+
+if (!isVisit) {
+    alert("The project is still in progress, and the calculator functionality has not been implemented yet.");
+    alert("Inspired by Mathway Calculator");
+  
+    history.isVisit = true;
+    localStorage.setItem('changeHistory', JSON.stringify(history));
+}
 
 formatCall (window, 'resize', () => { buttonAreaShow(), buttonAreaHide() })    
 
