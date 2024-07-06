@@ -1,0 +1,180 @@
+<!-- 
+        File Type :    HyperText Markup Language (HTML)
+        Uses      :    General.css, Container.css, and jsCalc.js
+        Code by   :    Jeo D. Latorre
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>     Math     </title>
+
+    <link rel="shortcut icon" type="x-icon" href="images/logoDark.png">
+
+    <link rel="stylesheet" href="css/General.css">
+    <link rel="stylesheet" href="css/Container.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="innerContainer">
+            <header>
+                <div class="logoContainer" title="Math Home">
+                    <a href="Calculator.html">
+                        <img 
+                            class="logo" 
+                            src="images/logoDark.png" 
+                            alt=""
+                        >
+                    </a>
+    
+                    <a href="Calculator.html">
+                        <p class="logoName" title="Math Home">  MATH    </p> 
+                        <sup title="Math Home"> J L</sup>
+                    </a>
+                </div>
+    
+                <div class="mathBranch">
+                    <p class="mathBranchSelector">
+                        Basic Math
+                    </p>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="modal"> 
+                        <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+                    </svg>
+    
+                    <div class="mathBranchList">
+                        <ul>
+                            <li>    Basic Math      </li>
+                            <li>    Algebra         </li>
+                            <li>    Calculus        </li>
+                            <li>    Matrices        </li>
+                            <li>    Trigonometry    </li>
+                        </ul>
+                    </div>
+    
+                <!--    highlight effect -->
+                    <div class="blur"></div>
+                </div>
+            </header>
+    
+            <div class="innerContent">
+                <div class="answerArea">
+                   <div class="answerAreaInner">
+                        <div class="tutorialTextContainer">
+                            <button class="tutorialText">
+                                How can I help you ?
+        
+                                <div class="tapMe">
+                                    Tap me!
+                                </div>
+        
+                                <span class="triangle"></span>
+                            </button>
+        
+                            <div class="logoIcon">
+                                <img class="logoIconImg" src="images/logoDark.png" alt="">
+                            </div>
+                        </div>
+                   </div>
+                </div>
+    
+                <div class="inputArea">
+                    <form action="">
+                        <input 
+                            id="userEQ" 
+                            class="inputEQ" 
+                            type="text" 
+                            placeholder="Enter Equation" 
+                            autocomplete="off" 
+                            required>
+    
+                        <button class="inputEQSubmit" type="submit"></button>
+                    </form>
+                </div>
+
+                <div class="buttonsArea">
+                    <input type="button" value="(">
+                    <input type="button" value=")">
+                    <input type="button" value="|">
+                    <input type="button" value="[">
+                    <input type="button" value="]">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+        
+                    <input type="button" value="x">
+                    <input type="button" value="7">
+                    <input type="button" value="8">
+                    <input type="button" value="9">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="">
+        
+                    <input type="button" value="y">
+                    <input type="button" value="4">
+                    <input type="button" value="5">
+                    <input type="button" value="6">
+                    <input type="button" value="/">
+                    <input type="button" value="^">
+                    <input type="button" value="*">
+                    <input type="button" value="&gt;">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="log">
+                    <input type="button" value="">
+                    
+                    <input type="button" value="z">
+                    <input type="button" value="1">
+                    <input type="button" value="2">
+                    <input type="button" value="3">
+                    <input type="button" value="-">
+                    <input type="button" value="+">
+                    <input type="button" value="">
+                    <input type="button" value="&lt;">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                    <input type="button" value="ln">
+                    <input type="button" value="i">
+                    <input type="button" value="abc">
+                    <input type="button" value=",">
+                    <input type="button" value="0">
+                    <input type="button" value=".">
+                    <input type="button" value="%">
+                    <input type="button" value="" class="buttonSpace">
+                    <input type="button" value="=">
+                    <input type="button" value="&lt;">
+                    <input type="button" value="&gt;">
+                    <input type="button" value="">
+                    <input type="button" value="">
+                </div>
+            </div>
+
+            <div class="backDrop"> </div>
+
+            <div class="deleteHistory">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                </svg>
+
+                <p> Clear History </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/Main.js"></script>
+    <script type="module" src="js/Variables.js"></script>
+</body>
+</html>

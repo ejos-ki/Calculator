@@ -1,0 +1,73 @@
+/*
+        File Type :    Cascading Style Sheets (CSS)
+        Used in   :    Calculator.html
+        Code by   :    Jeo D. Latorre
+*/
+
+body {
+    display         : flex;
+    justify-content : center;
+    margin          : 0;
+    padding         : 0;
+}
+
+p {
+    display : inline-block;
+    margin  : 0;
+    padding : 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    padding: 2px 0px 5px 5px;
+    height : 20px;
+    width  : 30px;
+    border : 1px solid rgba(176, 170, 117, 0);;
+}
+
+svg:hover {
+    background-color: rgba(176, 170, 117, 0.9);
+    border          : 1px solid white;
+}
+
+sup {
+    font-weight : normal;
+    margin      : 0px 0px 10px 5px;
+    color       : yellow;
+}
+
+ul, li {
+    margin      : 0;
+    padding     : 0;
+    list-style  : none;
+    font-style  : normal;
+    font-size   : 14px;
+    font-weight : normal;
+}
+
+li {
+    padding: 8px 15px 8px 15px;
+}
+
+input[type="button"] {
+    border-radius : 20%;
+    border        : none;
+    font-weight   : bold;
+}
+
+input[class="buttonSpace"] {
+    grid-column  : span 2;
+    border-radius: 10%;
+}
+
+form {
+    display              : grid;
+    grid-template-columns: 10fr 1fr;
+    column-gap           : 0;
+    width                : 100%;
+    height               : 100%;
+    border               : none;
+}
